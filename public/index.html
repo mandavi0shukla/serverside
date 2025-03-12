@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenleaf Organics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Styling for Forms */
+        .form-container {
+            max-width: 500px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 1.5em;
+            color: #5cb85c; /* Green color from the header */
+        }
+
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.7em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            background-color: #5cb85c;
+            color: white;
+            padding: 0.8em 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .submit-btn:hover {
+            background-color: #4cae4c; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Greenleaf Organics</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="#signup">Signup</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Fresh, Organic Produce Delivered to Your Door</h1>
+            <p>We believe in healthy eating and sustainable living.</p>
+            <a href="#products" class="btn">Explore Our Products</a>
+        </div>
+    </section>
+
+    <section class="main-section" id="about">
+        <h2>About Us</h2>
+        <p>Greenleaf Organics is dedicated to providing you with the freshest, highest quality organic produce. Sourced directly from local farms, our fruits and vegetables are not only delicious but also good for you and the environment.</p>
+    </section>
+
+    <section class="products-section" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1518880130089-99c46914794c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8YXBwbGVzfHx8fHx8MTY3NjkwOTI0Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source" alt="Apples">
+                <h3>Fresh Apples</h3>
+                <p>Crisp and juicy, perfect for snacking or baking.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608685859984-4ca6ff9d0410?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8YmFuYW5hfHx8fHx8MTY3NjkwOTI1Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source" alt="Bananas">
+                <h3>Sweet Bananas</h3>
+                <p>Great source of potassium and energy.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1591958587489-b0815499a45e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2Fycm90c3x8fHx8fDE2NzY5MDkyNjY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source" alt="Carrots">
+                <h3>Organic Carrots</h3>
+                <p>Vitamins and minerals in every bite.</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1615487493550-95a1c45b943f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8b3JhbmdlfHx8fHx8MTY3NjkwOTI4NA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source" alt="Oranges">
+                <h3>Juicy Oranges</h3>
+                <p>Packed with Vitamin C and flavor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <div class="contact-info">
+            <div>
+                <h3>Address</h3>
+                <p>123 Organic Lane<br>Farmville, State 12345</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>555-123-4567</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@greenleaforganics.com">info@greenleaforganics.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-container" id="signup">
+        <h2>Signup</h2>
+        <form action="/signup" method="POST">
+            <div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Signup</button>
+        </form>
+    </section>
+
+    <section class="form-container" id="login">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Greenleaf Organics</p>
+    </footer>
+
+</body>
+</html>
