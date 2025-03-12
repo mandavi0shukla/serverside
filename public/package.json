@@ -1,0 +1,13 @@
+{
+    "name": "serverside", // Your project name
+    "version": "1.0.0",
+    "description": "Node.js server for Greenleaf Organics website",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js" // Command to start the server
+    },
+    "dependencies": {
+        "express": "^4.17.1",   // Express.js dependency
+        "body-parser": "^1.19.0" // body-parser dependency
+    }
+}
